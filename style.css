@@ -81,9 +81,9 @@ body{
 }
 .bg::before{
   content: "";
-  height: 74%;
+  height: 90%;
   width: 100%;
-  background-image: url("images/background.png");
+  background-image: url("images/silk.png");
   position: absolute;
   top: 0;
   background-color: #BF9264;
@@ -94,16 +94,24 @@ h1{
   font-size: 50px;
   text-align: center;
   margin-top: 100px;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: all 0.6s ease;
+}
+h1.animate{
+  opacity: 1;
+  transform: scale(1);
 }
 .about{
   margin-left: 20px;
-  color: white;
+  color: #2A3335;
   height: 200px;
   width: 200px;
   font-size: 18px;
   line-height: 1.5rem;
 }
 .about h2{
+  margin-top: 100px;
   color: #FEFAE0;
 }
 .fashion{
@@ -181,6 +189,14 @@ h1{
   height: 350px;
   width: 100%;
   max-width: 400px;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 0.6s ease;
+}
+.card.animate{
+  opacity: 1;
+  transform: scale(1);
+
 }
 .card h3{
   padding: 20px;
@@ -243,6 +259,13 @@ h1{
   height: 350px;
   width: 100%;
   max-width: 350px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease;
+}
+.service_box.animate{
+  opacity: 1;
+  transform: translateY(0);
 }
 .service_box img:hover{
   transform: scale(1.02);

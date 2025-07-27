@@ -5,9 +5,6 @@ support = document.querySelector(".suppo_par")
 contact = document.querySelector(".con")
 services[1].addEventListener("click",()=>{
     div.style.display = "block"
-    fashion.style.display = "none"
-    support.style.display = "none"
-    contact.style.display = "none"
 })
 services[0].addEventListener("click",()=>{
     div.style.display = "none"
@@ -20,7 +17,9 @@ services[2].addEventListener("click",()=>{
     contact.style.display = "none"
 })
 fashion_box = document.querySelectorAll(".fashion_box")
-console.log(fashion_box)
+cards = document.querySelectorAll(".card")
+ser_box = document.querySelectorAll(".service_box")
+heading = document.querySelector(".h1")
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting){
@@ -32,7 +31,13 @@ const observer = new IntersectionObserver((entries)=>{
     });
 },
 );
-
 fashion_box.forEach(box=>{
         observer.observe(box)
  });
+ cards.forEach(box=>{
+        observer.observe(box)
+ });
+ ser_box.forEach(box=>{
+    observer.observe(box)
+ })
+observer.observe(heading)
