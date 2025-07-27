@@ -184,7 +184,8 @@ h1.animate{
 }
 .collection1{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 .card{
   border: 2px solid #CDC2A5;
