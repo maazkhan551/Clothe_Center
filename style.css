@@ -10,15 +10,16 @@
   }
   .support{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .collection1{
     flex-direction: column;
   }
   .fashion{
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
-    margin-left: 100px;
   }
   .card{
     width: 310px;
@@ -40,6 +41,9 @@
   }
   .fashion_paragraph{
     width: 300px;
+  }
+  .offers h2{
+    margin-top: 180px;
   }
 }
 body{
@@ -121,7 +125,6 @@ h1.animate{
   
 }
 .fashion_par{
-    /* background-image: url("images/bg_fashion.png"); */
     background-size: cover;
     margin-bottom: 100px;
 }
@@ -135,7 +138,7 @@ h1.animate{
 .fashion_box{
   text-align: center;
   width: 320px;
-   height: 400px;
+  height: 400px;
   border: 2px solid #CDC2A5;
   border-radius: 20px;
   opacity: 0;
